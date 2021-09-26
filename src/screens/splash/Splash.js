@@ -1,25 +1,28 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import RNBootSplash from 'react-native-bootsplash';
 import { FadeOut } from 'react-native-reanimated';
 
 import * as S from './Splash.styled';
 
 function Splash({ setIsLoading }) {
+  const splashRef = useRef();
+
   return (
     <S.Wrap exiting={FadeOut}>
       <S.SplashLottie
+        ref={splashRef}
         onLayout={onLottieLoad}
         source={require('@assets/splash/splash.json')}
         onAnimationFinish={onAnimationFinish}
-        autoPlay
         loop={false}
         speed={1.5}
       />
     </S.Wrap>
   );
 
-  function onLottieLoad() {
-    RNBootSplash.hide({ fade: true });
+  async function onLottieLoad() {
+    await RNBootSplash.hide();
+    splashRef.current.play();
   }
 
   function onAnimationFinish() {
