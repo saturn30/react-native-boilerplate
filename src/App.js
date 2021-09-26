@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -9,8 +9,6 @@ import {
   View,
 } from 'react-native';
 
-import RNBootSplash from 'react-native-bootsplash';
-
 import {
   Colors,
   DebugInstructions,
@@ -18,6 +16,8 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+import {Splash} from '@screens';
 
 const Section = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -52,10 +52,7 @@ const App = () => {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  useEffect(() => {
-    RNBootSplash.hide({fade: true});
-    console.log('Bootsplash has been hidden successfully');
-  }, []);
+  return <Splash />;
 
   return (
     <SafeAreaView style={backgroundStyle}>

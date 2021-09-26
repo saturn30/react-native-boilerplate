@@ -44,5 +44,7 @@ def enableProguardInReleaseBuilds = true
 ### 스플래쉬 이미지 설정
 
 - https://github.com/zoontek/react-native-bootsplash 사용
-  - assets/splash.jpg 저장
   - 안드로이드의 경우 메뉴얼 1번까지만 하면 됨
+  - https://lottiefiles.com/ lottie splash.json 파일 다운로드
+  - 0번 프레임 html 인스펙터에서 svg 복사, png로 변환 후 splash.png 파일 assets/splash에 저장
+  - yarn set-splash
