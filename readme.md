@@ -48,3 +48,13 @@ def enableProguardInReleaseBuilds = true
   - https://lottiefiles.com/ lottie splash.json 파일 다운로드
   - 0번 프레임 html 인스펙터에서 svg 복사, png로 변환 후 splash.png 파일 assets/splash에 저장
   - yarn set-splash
+
+### tailwindcss
+
+- https://tvke.github.io/react-native-tailwindcss/
+- https://github.com/aniftyco/awesome-tailwindcss
+
+### reanimated
+
+- 안드로이드 mainActivity, proguard 설정
+- https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/installation

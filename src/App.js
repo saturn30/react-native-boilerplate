@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 
-import {Splash} from '@screens';
+import { Splash } from '@screens';
 
 const App = () => {
-  return <Splash />;
+  const [isLoading, setIsLoading] = useState(true);
+
+  if (isLoading) {
+    return <Splash setIsLoading={setIsLoading} />;
+  }
+
+  return <NavigationContainer></NavigationContainer>;
 };
 
 export default App;
