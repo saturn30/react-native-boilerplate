@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 
+import { HomeStackNavigation } from '@navigation';
 import { Splash } from '@screens';
 
 const App = () => {
@@ -10,7 +11,11 @@ const App = () => {
     return <Splash setIsLoading={setIsLoading} />;
   }
 
-  return <NavigationContainer></NavigationContainer>;
+  return (
+    <NavigationContainer>
+      <HomeStackNavigation />
+    </NavigationContainer>
+  );
 };
 
 export default App;
