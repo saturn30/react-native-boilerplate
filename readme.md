@@ -40,3 +40,8 @@ def enableProguardInReleaseBuilds = true
 ```
 
 - cli `yarn pod-install && yarn ios`
+
+### 스플래쉬 이미지 설정
+
+- https://github.com/zoontek/react-native-bootsplash 사용
+  - assets/splash.jpg 저장

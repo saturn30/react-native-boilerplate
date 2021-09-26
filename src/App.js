@@ -1,12 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -16,6 +8,8 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+
+import RNBootSplash from 'react-native-bootsplash';
 
 import {
   Colors,
@@ -57,6 +51,11 @@ const App = () => {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  useEffect(() => {
+    RNBootSplash.hide({fade: true});
+    console.log('Bootsplash has been hidden successfully');
+  }, []);
 
   return (
     <SafeAreaView style={backgroundStyle}>
