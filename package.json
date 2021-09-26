@@ -17,7 +17,7 @@
     "link": "npx react-native link",
     "rename": "npx react-native-rename",
     "clean": "npx react-native-clean-project",
-    "set-splash": "react-native generate-bootsplash assets/splash.jpg --background-color=FFF --logo-width=300 --assets-path=assets --flavor=main"
+    "set-splash": "react-native generate-bootsplash assets/splash/splash.jpg --background-color=FFFFFF --logo-width=300 --assets-path=assets/splash --flavor=main"
   },
   "dependencies": {
     "react": "17.0.2",

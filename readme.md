@@ -45,3 +45,4 @@ def enableProguardInReleaseBuilds = true
 
 - https://github.com/zoontek/react-native-bootsplash 사용
   - assets/splash.jpg 저장
+  - 안드로이드의 경우 메뉴얼 1번까지만 하면 됨
