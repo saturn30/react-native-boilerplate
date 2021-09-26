@@ -1,6 +1,7 @@
 module.exports = {
   presets: ['module:metro-react-native-babel-preset'],
   plugins: [
+    ['@babel/plugin-proposal-export-namespace-from'],
     [
       'module-resolver',
       {
@@ -18,8 +19,13 @@ module.exports = {
         alias: {
           '@assets': './assets',
           '@components': './src/components',
+          '@components/*': './src/components/*',
           '@navigation': './src/navigation',
+          '@navigation/*': './src/navigation/*',
           '@screens': './src/screens',
+          '@screens/*': './src/screens/*',
+          '@utils': './src/utils',
+          '@utils/*': './src/utils/*',
         },
       },
     ],
