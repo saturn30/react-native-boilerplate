@@ -5,8 +5,6 @@ import { DEFAULT_LOCALE, LANGUAGES, TEXT } from '@constants';
 import * as translations from './locales';
 
 export function setI18n() {
-  console.log(RNLocalize.getLocales());
-
   i18n.fallbacks = true;
   i18n.translations = translations;
   i18n.defaultLocale = DEFAULT_LOCALE;
