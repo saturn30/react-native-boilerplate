@@ -29,6 +29,8 @@ module.exports = {
           '@utils/*': './src/utils/*',
           '@i18n': './src/i18n',
           '@i18n/*': './src/i18n/*',
+          '@constants': './src/constants',
+          '@constants/*': './src/constants/*',
         },
       },
     ],

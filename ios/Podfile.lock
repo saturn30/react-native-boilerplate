@@ -359,6 +359,8 @@ PODS:
     - React-perflogger (= 0.65.1)
   - RNBootSplash (3.2.6):
     - React-Core
+  - RNLocalize (2.1.4):
+    - React-Core
   - RNReanimated (2.3.0-beta.1):
     - DoubleConversion
     - FBLazyVector
@@ -453,6 +455,7 @@ DEPENDENCIES:
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - RNBootSplash (from `../node_modules/react-native-bootsplash`)
+  - RNLocalize (from `../node_modules/react-native-localize`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -541,6 +544,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNBootSplash:
     :path: "../node_modules/react-native-bootsplash"
+  RNLocalize:
+    :path: "../node_modules/react-native-localize"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
@@ -596,6 +601,7 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: 85187f19dd9c47a7c102f9994f9d14e4dc2110de
   ReactCommon: eafed38eec7b591c31751bfa7494801618460459
   RNBootSplash: 51eef7e143faeab63f81ddbb7c1de38b8fba66ed
+  RNLocalize: 7f1e5792b65a839af55a9552d05b3558b66d017e
   RNReanimated: 13f91e6ffd60b3f50c579804958c7610de6ba9c9
   RNScreens: 0591543e343c7444ea1756b6265d81a4295922c9
   Yoga: aa0cb45287ebe1004c02a13f279c55a95f1572f4

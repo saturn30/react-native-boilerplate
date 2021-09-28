@@ -1,1 +1,1 @@
-export { setI18n } from './i18n';
+export { setI18n, translate } from './i18n';

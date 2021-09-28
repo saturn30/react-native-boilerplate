@@ -1,11 +1,11 @@
-import React, { useRef } from 'react';
-import RNBootSplash from 'react-native-bootsplash';
+import React from 'react';
 import { FadeOut } from 'react-native-reanimated';
 
 import * as S from './Splash.styled';
+import useHook from './Splash.hook';
 
 function Splash({ setIsLoading }) {
-  const splashRef = useRef();
+  const { splashRef, onLottieLoad, onAnimationFinish } = useHook(setIsLoading);
 
   return (
     <S.Wrap exiting={FadeOut}>
@@ -19,15 +19,6 @@ function Splash({ setIsLoading }) {
       />
     </S.Wrap>
   );
-
-  async function onLottieLoad() {
-    await RNBootSplash.hide();
-    splashRef.current.play();
-  }
-
-  function onAnimationFinish() {
-    setIsLoading(false);
-  }
 }
 
 export default Splash;

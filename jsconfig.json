@@ -7,7 +7,8 @@
       "@assets/*": ["./assets/*"],
       "@screens": ["./src/screens/*"],
       "@utils": ["./src/utils/*"],
-      "@i18n": ["./src/i18n/*"]
+      "@i18n": ["./src/i18n/*"],
+      "@constants": ["./src/constants/*"]
     }
   },
   "exclude": ["node_modules", "dist"]
