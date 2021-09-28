@@ -13,10 +13,6 @@ export function setI18n() {
     DEFAULT_LOCALE;
 }
 
-export function translate(key, options) {
-  return i18n.t(key, options);
-}
-
 export const text = value2Translate(TEXT);
 
 export function value2Translate(translation, scope = []) {
