@@ -6,7 +6,7 @@ import * as S from './Home.styled';
 function Home() {
   return (
     <S.Wrap>
-      <S.StyledText>{translate('hello')}</S.StyledText>
+      <S.StyledText>{translate('hello', { name: 'kim' })}</S.StyledText>
     </S.Wrap>
   );
 }

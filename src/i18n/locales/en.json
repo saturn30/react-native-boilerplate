@@ -1,4 +1,3 @@
 {
-  "hello": "hello",
-  "good": "good"
+  "hello": "hello {{name}} 님"
 }
