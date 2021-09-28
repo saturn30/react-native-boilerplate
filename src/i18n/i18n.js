@@ -20,14 +20,19 @@ export function translate(key, options) {
 export const text = value2Translate(TEXT);
 
 export function value2Translate(translation, scope = []) {
-  return Object.keys(translation).reduce((acc, key) => {
-    if (typeof translation[key] === 'object') {
-      return {
-        ...acc,
-        [key]: value2Translate(translation[key], [...scope, key]),
-      };
+  return convertObj(translation, convertFunc);
+
+  function convertFunc({ key, value }) {
+    if (typeof value === 'object') {
+      return value2Translate(value, [...scope, key]);
     }
-    return { ...acc, [key]: makeTranslate([...scope, key].join('.')) };
+    return makeTranslate([...scope, key].join('.'));
+  }
+}
+
+function convertObj(obj, convertFunc, ...rest) {
+  return Object.keys(obj).reduce((acc, key) => {
+    return { ...acc, [key]: convertFunc({ key, value: obj[key], ...rest }) };
   }, {});
 }
 
