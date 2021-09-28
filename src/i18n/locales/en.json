@@ -1,3 +1,8 @@
 {
-  "hello": "hello {{name}} 님"
+  "hello": "hello {{name}} en",
+  "scope1": {
+    "scope2": {
+      "message": "scope 1, 2"
+    }
+  }
 }

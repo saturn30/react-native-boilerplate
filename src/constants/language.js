@@ -1,2 +1,2 @@
-export const defaultLocale = 'en';
-export const languages = ['ko', 'en'];
+export const DEFAULT_LOCALE = 'en';
+export const LANGUAGES = ['ko', 'en'];
