@@ -26,9 +26,9 @@ export function value2Translate(translation, scope = []) {
   }
 }
 
-function convertObj(obj, convertFunc, ...rest) {
+function convertObj(obj, convertFunc) {
   return Object.keys(obj).reduce((acc, key) => {
-    return { ...acc, [key]: convertFunc({ key, value: obj[key], ...rest }) };
+    return { ...acc, [key]: convertFunc({ key, value: obj[key] }) };
   }, {});
 }
 
