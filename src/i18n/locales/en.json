@@ -1,8 +1,1 @@
-{
-  "hello": "hello {{name}} en",
-  "scope1": {
-    "scope2": {
-      "message": "scope 1, 2"
-    }
-  }
-}
+{"hello":"Hello","scope1":{"scope2":{"message":"Scope 1, 2","message2":"Message 1, 2"}},"bye":"good bye"}
