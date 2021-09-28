@@ -1,6 +1,7 @@
 import { View, Text } from 'react-native';
 
-import { t, color, styled } from '@utils/styles';
+import styled from 'styled-components/native';
+import { t, color } from 'react-native-tailwindcss';
 
 export const Wrap = styled(View)`
   ${[t.flex, t.flex1, t.justifyCenter, t.itemsCenter]}
