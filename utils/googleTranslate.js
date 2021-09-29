@@ -18,7 +18,7 @@ function saveLocaleIndexJs() {
     path.resolve(__dirname, '../src/i18n/locales/index.js'),
     LANGUAGES.reduce(
       (acc, lang) =>
-        acc + `export { default as ${lang} } from './${lang}.json';`,
+        acc + `export { default as ${lang} } from './${lang}.json';\n`,
       '',
     ),
   );
@@ -41,8 +41,17 @@ async function translateObj(obj, lang) {
     result[key] =
       typeof value === 'object'
         ? await translateObj(value, lang)
-        : (await translate.translate(value, lang))[0];
+        : deleteSpanTag(
+            (await translate.translate(addSpanTag(value), lang))[0],
+          );
   }
-
   return result;
+}
+
+function addSpanTag(text) {
+  return text.replaceAll(/{{[^{}]+}}/g, '<span translate="no">$&</span>');
+}
+
+function deleteSpanTag(text) {
+  return text.replaceAll(/<\/?span[^>]*>/g, '');
 }
