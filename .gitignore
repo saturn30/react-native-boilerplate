@@ -61,3 +61,5 @@ buck-out/
 
 # local utils
 utils/key.js
+
+src/i18n/locales
