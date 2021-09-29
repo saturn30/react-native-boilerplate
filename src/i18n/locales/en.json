@@ -1,1 +1,1 @@
-{"hello":"Hello {{name}} Date {{date}}","scope1":{"scope2":{"message":"Scope 1, 2","message2":"Message 1, 2"}},"bye":"good bye"}
+{"hello":"Hello {{name}}","scope1":{"scope2":{"message":"message 1","message2":"react native"}}}

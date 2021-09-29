@@ -1,1 +1,1 @@
-{"hello":"こんにちは{{name}}様の日付{{date}}","scope1":{"scope2":{"message":"スコープ1、2","message2":"メッセージ1、2"}},"bye":"グッドバイ"}
+{"hello":"こんにちは{{name}}様","scope1":{"scope2":{"message":"メッセージ1","message2":"リーアクトネイティブ"}}}

@@ -7,7 +7,7 @@ function Home() {
   return (
     <S.Wrap>
       <S.StyledText>{text.hello({ name: 'kim' })}</S.StyledText>
-      <S.StyledText>{text.scope1.scope2.message()}</S.StyledText>
+      <S.StyledText>{text.scope1.scope2.message2()}</S.StyledText>
     </S.Wrap>
   );
 }

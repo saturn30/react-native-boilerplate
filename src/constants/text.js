@@ -1,10 +1,9 @@
 export const TEXT = {
-  hello: '안녕하세요 {{name}}님 날짜 {{date}}',
+  hello: '안녕하세요 {{name}}님',
   scope1: {
     scope2: {
-      message: '스코프 1, 2',
-      message2: '메세지 1, 2',
+      message: '메세지1',
+      message2: '리액트 네이티브',
     },
   },
-  bye: '굿 바이',
 };
