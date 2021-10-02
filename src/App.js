@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 
-import { HomeStackNavigation } from '@navigation';
+import { HomeStackNavigation } from '@navigations';
 import { Splash } from '@screens';
 
 const App = () => {
