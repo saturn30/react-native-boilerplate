@@ -19,7 +19,9 @@
     "clean": "npx react-native-clean-project",
     "translate": "babel-node ./utils/googleTranslate.js",
     "set-splash": "react-native generate-bootsplash assets/splash/splash.png --background-color=FFFFFF --logo-width=300 --assets-path=assets/splash --flavor=main",
-    "set-icon": "react-native set-icon --path ./assets/icon.png --background blue"
+    "set-icon": "react-native set-icon --path ./assets/icon.png --background blue",
+    "storybook": "start-storybook -p 7007",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.2",
@@ -47,12 +49,21 @@
     "@bam.tech/react-native-make": "^3.0.3",
     "@google-cloud/translate": "^6.3.0",
     "@react-native-community/eslint-config": "^3.0.1",
+    "@storybook/addon-actions": "^5.3",
+    "@storybook/addon-knobs": "^5.3",
+    "@storybook/addon-links": "^5.3",
+    "@storybook/addon-ondevice-actions": "^5.3.23",
+    "@storybook/addon-ondevice-knobs": "^5.3.25",
+    "@storybook/react-native": "^5.3.25",
+    "@storybook/react-native-server": "^5.3.23",
     "@types/jest": "^27.0.2",
     "babel-jest": "^27.2.2",
+    "babel-loader": "^8.2.2",
     "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^7.32.0",
     "jest": "^27.2.2",
     "metro-react-native-babel-preset": "^0.66.2",
+    "react-dom": "17.0.2",
     "react-native-codegen": "^0.0.7",
     "react-test-renderer": "17.0.2"
   },

@@ -32,6 +32,7 @@ function useHook() {
 
   function setting() {
     setI18n();
+    if (__DEV__) hideSplash();
   }
 
   function hideSplash() {
