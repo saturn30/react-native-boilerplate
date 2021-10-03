@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { t } from '@i18n';
 import { Button } from '@components';
+import { t } from '@i18n';
 
 import * as S from './Home.styled';
 
