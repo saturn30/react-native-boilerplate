@@ -18,7 +18,8 @@
     "rename": "npx react-native-rename",
     "clean": "npx react-native-clean-project",
     "translate": "babel-node ./utils/googleTranslate.js",
-    "set-splash": "react-native generate-bootsplash assets/splash/splash.png --background-color=FFFFFF --logo-width=300 --assets-path=assets/splash --flavor=main"
+    "set-splash": "react-native generate-bootsplash assets/splash/splash.png --background-color=FFFFFF --logo-width=300 --assets-path=assets/splash --flavor=main",
+    "set-icon": "react-native set-icon --path ./assets/icon.png --background blue"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.2",
@@ -43,6 +44,7 @@
     "@babel/node": "^7.15.4",
     "@babel/plugin-proposal-export-namespace-from": "^7.14.5",
     "@babel/runtime": "^7.15.4",
+    "@bam.tech/react-native-make": "^3.0.3",
     "@google-cloud/translate": "^6.3.0",
     "@react-native-community/eslint-config": "^3.0.1",
     "@types/jest": "^27.0.2",
