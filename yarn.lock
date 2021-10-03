@@ -10603,7 +10603,7 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^2.0.2:
+prettier@^2.0.2, prettier@^2.0.5:
   version "2.4.1"
   resolved "https://registry.npmjs.org/prettier/-/prettier-2.4.1.tgz"
   integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
@@ -11164,6 +11164,17 @@ react-native-screens@^3.4.0, react-native-screens@^3.7.2:
   integrity sha512-TUmCE2ZIr6SFCUqsUqLsYQZ7EWo+tKyxSVFj3G5BCkGFOl3MwXEPgT/ihNCnL1aUAgr6TEMWVHg+awLkkQgYyQ==
   dependencies:
     warn-once "^0.1.0"
+
+react-native-storybook-loader@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/react-native-storybook-loader/-/react-native-storybook-loader-2.0.4.tgz#37bf37193e69b42a0b2aa0daeed4de8dbfeeae28"
+  integrity sha512-MmBdO7ugBkHEZa4F1qXFgjB7ejURmKGTZ/3o6zXPgUpaoMdh8tT5LLliJH9uOFzh7oY13TfTMZ9HyCa3E/dqLg==
+  dependencies:
+    colors "^1.1.2"
+    find-up "^4.1.0"
+    glob "^7.1.1"
+    prettier "^2.0.5"
+    yargs "^15.4.1"
 
 react-native-swipe-gestures@^1.0.4:
   version "1.0.5"
@@ -13671,7 +13682,7 @@ yargs-parser@^20.2.2:
   resolved "https://registry.npmjs.org/yargs-parser/-/yargs-parser-20.2.9.tgz"
   integrity sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==
 
-yargs@^15.1.0, yargs@^15.3.1:
+yargs@^15.1.0, yargs@^15.3.1, yargs@^15.4.1:
   version "15.4.1"
   resolved "https://registry.npmjs.org/yargs/-/yargs-15.4.1.tgz"
   integrity sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==

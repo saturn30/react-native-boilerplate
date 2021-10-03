@@ -21,7 +21,8 @@
     "set-splash": "react-native generate-bootsplash assets/splash/splash.png --background-color=FFFFFF --logo-width=300 --assets-path=assets/splash --flavor=main",
     "set-icon": "react-native set-icon --path ./assets/icon.png --background blue",
     "storybook": "start-storybook -p 7007",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prestorybook": "rnstl"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.2",
@@ -65,9 +66,19 @@
     "metro-react-native-babel-preset": "^0.66.2",
     "react-dom": "17.0.2",
     "react-native-codegen": "^0.0.7",
+    "react-native-storybook-loader": "^2.0.4",
     "react-test-renderer": "17.0.2"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src/components"
+      ],
+      "pattern": "**/*.stories.js",
+      "outputFile": "./storybook/storyLoader.js"
+    }
   }
 }
