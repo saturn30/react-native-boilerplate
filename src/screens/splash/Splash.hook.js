@@ -2,10 +2,11 @@ import { useState, useEffect, useRef } from 'react';
 import RNBootSplash from 'react-native-bootsplash';
 
 import { setI18n } from '@i18n';
+import { useIsSplashingAtom } from '@atoms';
 
-// setIsLoading -> 추후 recoil 전역상태로 옮기기
-function useHook(setIsLoading) {
+function useHook() {
   const splashRef = useRef();
+  const [, setIsSplashing] = useIsSplashingAtom();
 
   const [isSettingFinished, setIsSettingFinished] = useState(false);
   const [isAnimationFinished, setIsAnimationFinished] = useState(false);
@@ -34,7 +35,7 @@ function useHook(setIsLoading) {
   }
 
   function hideSplash() {
-    setIsLoading(false);
+    setIsSplashing(false);
   }
 }
 

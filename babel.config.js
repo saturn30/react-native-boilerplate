@@ -31,6 +31,8 @@ module.exports = {
           '@i18n/*': './src/i18n/*',
           '@constants': './src/constants',
           '@constants/*': './src/constants/*',
+          '@atoms': './src/atoms',
+          '@atoms/*': './src/atoms/*',
         },
       },
     ],

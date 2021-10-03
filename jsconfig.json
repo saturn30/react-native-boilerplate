@@ -2,9 +2,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@assets/*": ["./assets/*"],
+      "@atoms": ["./src/atoms/*"],
       "@navigations/*": ["./src/navigations/*"],
       "@components/*": ["./src/components/*"],
-      "@assets/*": ["./assets/*"],
       "@screens": ["./src/screens/*"],
       "@utils": ["./src/utils/*"],
       "@i18n": ["./src/i18n/*"],

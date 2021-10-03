@@ -4,8 +4,8 @@ import { FadeOut } from 'react-native-reanimated';
 import * as S from './Splash.styled';
 import useHook from './Splash.hook';
 
-function Splash({ setIsLoading }) {
-  const { splashRef, onLottieLoad, onAnimationFinish } = useHook(setIsLoading);
+function Splash() {
+  const { splashRef, onLottieLoad, onAnimationFinish } = useHook();
 
   return (
     <S.Wrap exiting={FadeOut}>
