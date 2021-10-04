@@ -20,8 +20,8 @@
     "translate": "babel-node ./utils/googleTranslate.js",
     "set-splash": "react-native generate-bootsplash assets/splash/splash.png --background-color=FFFFFF --logo-width=300 --assets-path=assets/splash --flavor=main",
     "set-icon": "react-native set-icon --path ./assets/icon.png --background blue",
-    "start-docz": "docz dev",
-    "build-docz": "docz build"
+    "docz:start": "docz dev",
+    "docz:build": "docz build"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.2",
