@@ -51,8 +51,7 @@ def enableProguardInReleaseBuilds = true
 
 ### tailwindcss
 
-- https://tvke.github.io/react-native-tailwindcss/
-- https://github.com/aniftyco/awesome-tailwindcss
+- https://github.com/vadimdemedes/tailwind-rn
 
 ### reanimated
 

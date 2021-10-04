@@ -39,7 +39,6 @@
     "react-native-reanimated": "^2.3.0-beta.1",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.7.2",
-    "react-native-tailwindcss": "^1.1.11",
     "react-native-web": "^0.17.5",
     "styled-components": "^5.3.1",
     "tailwind-rn": "^3.0.1"
