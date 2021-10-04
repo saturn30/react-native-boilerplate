@@ -19,16 +19,20 @@
     "clean": "npx react-native-clean-project",
     "translate": "babel-node ./utils/googleTranslate.js",
     "set-splash": "react-native generate-bootsplash assets/splash/splash.png --background-color=FFFFFF --logo-width=300 --assets-path=assets/splash --flavor=main",
-    "set-icon": "react-native set-icon --path ./assets/icon.png --background blue"
+    "set-icon": "react-native set-icon --path ./assets/icon.png --background blue",
+    "start-docz": "docz dev",
+    "build-docz": "docz build"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/native-stack": "^6.1.0",
+    "docz": "^2.3.1",
     "i18n-js": "^3.8.0",
     "jotai": "^1.3.7",
     "lottie-ios": "3.2.3",
     "lottie-react-native": "^4.1.3",
-    "react": "17.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-native": "0.65.1",
     "react-native-bootsplash": "^3.2.6",
     "react-native-localize": "^2.1.4",
@@ -36,7 +40,9 @@
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.7.2",
     "react-native-tailwindcss": "^1.1.11",
-    "styled-components": "^5.3.1"
+    "react-native-web": "^0.17.5",
+    "styled-components": "^5.3.1",
+    "tailwind-rn": "^3.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",

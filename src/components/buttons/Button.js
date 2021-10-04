@@ -1,6 +1,5 @@
+import React from 'react';
 import * as S from './Button.styled';
-
-console.log(S);
 
 export function Button({ children }) {
   return (

@@ -63,3 +63,4 @@ buck-out/
 utils/key.js
 
 src/i18n/locales
+.docz

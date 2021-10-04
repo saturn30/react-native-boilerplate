@@ -1,12 +1,12 @@
 import { TouchableOpacity, Text as RNText } from 'react-native';
 
 import styled from 'styled-components/native';
-import { tw } from 'react-native-tailwindcss';
+import tw from 'tailwind-rn';
 
 export const Button = styled(TouchableOpacity)`
-  ${[tw.p3, tw.bgBlue500, tw.roundedLg, tw.w64]}
+  ${tw('p-3 bg-blue-300 rounded-lg')};
 `;
 
 export const Text = styled(RNText)`
-  ${[tw.textCenter, tw.textWhite]}
+  ${tw('text-white')};
 `;
