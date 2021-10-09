@@ -57,3 +57,7 @@ def enableProguardInReleaseBuilds = true
 
 - 안드로이드 mainActivity, proguard 설정
 - https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/installation
+
+### 파이어베이스 설치
+
+https://rnfirebase.io/

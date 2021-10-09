@@ -65,3 +65,7 @@ utils/key.js
 
 src/i18n/locales
 .docz
+
+# firebase 설정 파일
+/android/app/*.json
+/ios/GoogleService-Info.plist
