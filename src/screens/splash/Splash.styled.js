@@ -5,7 +5,7 @@ import styled from 'styled-components/native';
 import tw from 'tailwind-rn';
 
 export const Wrap = styled(Animated.View)`
-  ${tw('flex flex1 justify-center items-center bg-blue-100 z-10')}
+  ${tw('flex flex-1 justify-center items-center bg-blue-100 z-10')};
 `;
 
 export const SplashLottie = styled(LottieView)`
