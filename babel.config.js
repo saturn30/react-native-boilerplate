@@ -6,7 +6,7 @@ module.exports = {
     [
       'module-resolver',
       {
-        root: ['./src'],
+        root: ['./'],
         extensions: [
           '.ios.ts',
           '.android.ts',
@@ -19,14 +19,14 @@ module.exports = {
         ],
         alias: {
           '@assets': './assets',
-          '@components/*': './src/components/*',
-          '@navigations/*': './src/navigations/*',
-          '@screens/*': './src/screens/*',
-          '@utils/*': './src/utils/*',
-          '@i18n/*': './src/i18n/*',
-          '@constants/*': './src/constants/*',
-          '@atoms/*': './src/atoms/*',
-          '@hooks/*': ['./src/hooks/*'],
+          '@components': './src/components',
+          '@navigations': './src/navigations',
+          '@screens': './src/screens',
+          '@utils': './src/utils',
+          '@i18n': './src/i18n',
+          '@constants': './src/constants',
+          '@atoms': './src/atoms',
+          '@hooks': './src/hooks',
         },
       },
     ],
