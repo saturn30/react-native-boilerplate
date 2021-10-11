@@ -3,8 +3,10 @@ import RNBootSplash from 'react-native-bootsplash';
 
 import { setI18n } from '@i18n';
 import { useIsSplashingAtom } from '@atoms';
+import { useAuth } from '@hooks/auth';
 
 function useHook() {
+  useAuth();
   const splashRef = useRef();
   const [, setIsSplashing] = useIsSplashingAtom();
 

@@ -3,13 +3,14 @@
     "baseUrl": ".",
     "paths": {
       "@assets/*": ["./assets/*"],
-      "@atoms": ["./src/atoms/*"],
+      "@atoms/*": ["./src/atoms/*"],
       "@navigations/*": ["./src/navigations/*"],
       "@components/*": ["./src/components/*"],
-      "@screens": ["./src/screens/*"],
-      "@utils": ["./src/utils/*"],
-      "@i18n": ["./src/i18n/*"],
-      "@constants": ["./src/constants/*"]
+      "@screens/*": ["./src/screens/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@i18n/*": ["./src/i18n/*"],
+      "@constants/*": ["./src/constants/*"],
+      "@hooks/*": ["./src/hooks/*"]
     }
   },
   "exclude": ["node_modules", "dist"]

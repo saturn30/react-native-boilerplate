@@ -2,9 +2,9 @@ import React from 'react';
 import p from 'prop-types';
 import * as S from './Button.styled';
 
-export function Button({ children, backgroundColor }) {
+export function Button({ children, backgroundColor, ...rest }) {
   return (
-    <S.Button backgroundColor={backgroundColor}>
+    <S.Button backgroundColor={backgroundColor} {...rest}>
       <S.Text>{children}</S.Text>
     </S.Button>
   );
